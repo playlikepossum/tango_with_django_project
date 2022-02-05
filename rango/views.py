@@ -50,7 +50,8 @@ def show_category(request,category_name_slug):
         # the template will display the "no category" message for us.
         context_dict['category'] = None
         context_dict['pages'] = None
-    # Go render the response and return it to the client.
+    # Go render the response and return it to the client
+
     return render(request, 'rango/category.html', context=context_dict)
 
 def add_category(request):
